@@ -17,8 +17,8 @@
     <div id="second-timer-example"></div>
     <hr></hr>
     <div id="todos-example"></div>
-    <!-- <hr></hr>
-    <div id="markdown-example"></div> -->
+    <hr></hr>
+    <div id="markdown-example"></div>
 
     <script type="text/babel">
 
@@ -219,10 +219,12 @@
             document.getElementById('todos-example')
         );
 
-        /* class MarkdownEditor extends React.Component {
+        class MarkdownEditor extends React.Component {
             constructor(props) {
                 super(props);
-                this.md = new Remarkable();
+                this.md = new Remarkable({
+                html: true, 
+                });
                 this.handleChange = this.handleChange.bind(this);
                 this.state = { value: 'Hello, **world**!' };
             }
@@ -260,7 +262,7 @@
         ReactDOM.render(
             <MarkdownEditor />,
             document.getElementById('markdown-example')
-        ); */
+        );
 
     </script>
 </body>
