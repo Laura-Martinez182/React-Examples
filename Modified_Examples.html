@@ -54,7 +54,7 @@
                     seconds: state.seconds + 1
                 }));
 
-                if (this.state.minutes === 60 && this.state.seconds === 60) {
+                if (this.state.seconds === 60 && this.state.minutes === 59) {
                     this.setState(state => ({
                         hours: state.hours + 1,
                         minutes: 0,
@@ -112,7 +112,7 @@
                     seconds: state.seconds + 1
                 }));
 
-                if (this.state.minutes === 10 && this.state.seconds === 10) {
+                if (this.state.seconds === 10 && this.state.minutes === 9) {
                     this.setState(state => ({
                         hours: state.hours + 1,
                         minutes: 0,
